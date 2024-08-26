@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Feedback</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/al.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+
+        <h1>Arm's Length</h1>
+
+    </header>
+    <nav>
+        <ul>
+            <li><h2><a href="index.html">Home</a>&nbsp;</h2></li>
+            <li><h2><a href="table.html">Songs</a>&nbsp;</h2></li>
+            <li><h2><a href="form.html">Feedback</a>&nbsp;</h2></li>
+        </ul>
+</nav>
+
+<main>
+
+    <div class="wrapper">
+        <div class="text" id="title">
+            <h2>Feedback Form</h2>
+        </div>
+
+        <div id="formContainer">
+            <form action="https://webdevbasics.net/scripts/demo.php" method="post" id="feedbackForm">
+
+                <div id="favSongContainer">
+                    <h4>What is your favorite Arm's Length song?</h4>
+                    <select name="favSong" id="favSong">
+                        <option value="aries">Aries (Moth Song)</option>
+                        <option value="dirge">Dirge</option>
+                        <option value="eve">Eve (Household Name)</option>
+                        <option value="everything">Everything As I Knew It</option>
+                        <option value="family">Family and Friends</option>
+                        <option value="formative">Formative Age</option>
+                        <option value="gallows">Gallows Humor</option>
+                        <option value="garamond">Garamond</option>
+                        <option value="length">Arm's Length</option>
+                        <option value="love">I Don't Love You</option>
+                        <option value="memory">In Loving Memory</option>
+                        <option value="muscle">Muscle Memory</option>
+                        <option value="mercy">Playing Mercy</option>
+                        <option value="object">Object Permanence</option>
+                        <option value="overture">Overture</option>
+                        <option value="safer">Safer Skin</option>
+                        <option value="shrimp">Really Big Shrimp</option>
+                        <option value="sleep">No Sleep</option>
+                        <option value="smoke">Up In Smoke</option>
+                        <option value="theme">Theme Song</option>
+                        <option value="tough">Tough Love</option>
+                        <option value="watercolour">Watercolour</option>
+                    </select>
+                </div>
+
+                <div id="favCovContainer">
+                    <h4>What is your favorite piece of Arm's Length cover art?</h4>
+                    <div id="favCovOptions">
+                        <input type="radio" value="NBSNAF" name="favCover" id="NBSNAF">
+                        <label for="NBSNAF">Never Before Seen, Never Again Found</label><br>
+                        <input type="radio" value="EveNice" name="favCover" id="EveNice">
+                        <label for="EveNice">Everything Nice</label><br>
+                        <input type="radio" value="Smoke" name="favCover" id="Smoke">
+                        <label for="Smoke">Up In Smoke</label><br>
+                        <input type="radio" value="ArmLen" name="favCover" id="ArmLen">
+                        <label for="ArmLen">Arm's Length</label><br>
+                        <input type="radio" value="Garamond" name="favCover" id="Garamond">
+                        <label for="Garamond">Garamond</label><br>
+                        <input type="radio" value="Watercolour" name="favCover" id="Watercolour">
+                        <label for="Watercolour">Watercolour</label><br>
+                        <input type="radio" value="NoSleep" name="favCover" id="NoSleep">
+                        <label for="NoSleep">No Sleep</label><br>
+                        <input type="radio" value="ObjectPerm" name="favCover" id="ObjectPerm">
+                        <label for="ObjectPerm">Object Permanence</label><br>
+                        <input type="radio" value="LovingMem" name="favCover" id="LovingMem">
+                        <label for="LovingMem">Loving Memory</label><br>
+                        <input type="radio" value="NoLove" name="favCover" id="NoLove">
+                        <label for="NoLove">I Don't Love You</label>
+                    </div>
+                </div>
+                
+                <div id="ratingContainer">
+                    <h4>On a scale from 1 to 10, how would you rate this website?</h4>
+                    <input id="rating" name="rating" type="number" max="10" min="1" step="0.1" placeholder="Rating (1-10)">
+                </div>
+
+                <div id="feedbackContainer">
+                    <h4>Do you have any sugestions or comments on this website?</h4>
+                    <textarea id="response" name="response" maxlength="1000" cols="50" rows="10" placeholder="Type in this box."></textarea>
+                </div>
+
+                <div id="submitButton">
+                    <input type="submit" value="Submit" name="submit" id="submit">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</main>
+<footer>
+
+    Copyright &copy; 2024 Nathan Barss <br>
+    <a href="mailto:ncbarss@gmail.com">ncbarss@gmail.com</a>
+
+</footer>
+</body>
+</html>
